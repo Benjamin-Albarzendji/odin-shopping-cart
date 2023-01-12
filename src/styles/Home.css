@@ -1,21 +1,33 @@
-.image > div > img {
-  /* border-radius: 15px; */
-  width: 100%;
-  /* width: 100%; */
-  object-fit: cover;
-  height: 60vh;
-  transition: 2s;
+.Home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
 }
 
-.image .left, .image .right{
-    width: 20%;
+.image > div > img {
+  width: 100%;
+  height: 61vh;
+  transition: 2s;
+  object-fit: cover;
 }
-.Home{
-    display: flex;justify-content: center;
+
+.image .left,
+.image .right {
+  width: 20%;
+  border-radius: 15px;
 }
+
+.image .right {
+  transform: scaleX(-1);
+}
+
 .image > * {
   border-radius: 15px;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  height: 60vh;
 }
 
 .image > * img:hover {
@@ -28,7 +40,60 @@
   display: flex;
   justify-content: space-between;
   width: 95vw;
-  height: 50vh;
+  height: 61vh;
   overflow: hidden;
   gap: 20px;
+}
+
+.image .center {
+  position: relative;
+}
+
+.image .center .upper {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: white;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.image .center .lower {
+  position: absolute;
+  top: 90%;
+  right: 18%;
+  color: white;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.image .center .upperRight {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: white;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.Home .featured .header {
+  font-size: 2.5rem;
+  text-decoration: underline rgb(191, 0, 255);
+  text-underline-offset: 7px;
+  text-decoration-thickness: 3px;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50vw;
+}
+
+.featuredItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
