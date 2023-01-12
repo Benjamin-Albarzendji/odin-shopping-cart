@@ -8,9 +8,15 @@ const Home = () => {
   return (
     <div className="Home">
       <div className="image">
+        <div className="left">
         <img src={planet1} alt="Planet Left" />
+        </div>
+        <div className="center">
         <img src={backgroundImage} alt="Middle BG" />
+        </div>
+        <div className="right">
         <img src={planet2} alt="Planet Right" />
+        </div>
       </div>
     </div>
   );

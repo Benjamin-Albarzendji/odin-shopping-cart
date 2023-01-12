@@ -1,18 +1,34 @@
-.image > * {
-  border-radius: 15px;
-  width: 40%;
+.image > div > img {
+  /* border-radius: 15px; */
+  width: 100%;
   /* width: 100%; */
   object-fit: cover;
   height: 60vh;
+  transition: 2s;
+}
+
+.image .left, .image .right{
+    width: 20%;
+}
+.Home{
+    display: flex;justify-content: center;
+}
+.image > * {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.image > * img:hover {
+  background: black;
+  transform: scale(1.2);
+  transition: 3s;
 }
 
 .image {
   display: flex;
-  justify-content: center;
-  /* align-content: center; */
-
-  width: 90vw;
+  justify-content: space-between;
+  width: 95vw;
   height: 50vh;
-  /* overflow: hidden; */
+  overflow: hidden;
   gap: 20px;
 }
