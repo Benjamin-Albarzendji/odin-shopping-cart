@@ -21,12 +21,10 @@ const App = () => {
     setCounter((old) => old + 1);
   };
 
-  useEffect(() => console.log(shoppingList, counter), [shoppingList]);
-
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar></Navbar>
+        <Navbar counter={counter}></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />

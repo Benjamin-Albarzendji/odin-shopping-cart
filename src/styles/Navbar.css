@@ -1,15 +1,20 @@
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 15px;
-}
-.logo {
+  width: 95vw;
 }
 
 nav > div {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 nav > div > * {
@@ -35,4 +40,24 @@ nav > div > * {
 }
 .links > *:hover {
   --_p: 0%;
+}
+
+.links .navImage img {
+  cursor: pointer;
+  width: 30px;
+}
+
+.links .navImage {
+  position: relative;
+}
+
+.nav .navImage .counterCart {
+  position: absolute;
+  right: 23%;
+  top: 19%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
 }
