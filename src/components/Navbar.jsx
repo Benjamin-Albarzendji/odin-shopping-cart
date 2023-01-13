@@ -16,7 +16,6 @@ const Navbar = () => {
         <Link to="/About">
           <div>About</div>
         </Link>
-        
       </div>
     </nav>
   );

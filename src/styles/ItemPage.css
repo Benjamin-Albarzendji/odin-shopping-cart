@@ -1,0 +1,65 @@
+.itemPage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemCard {
+  padding: 30px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 50px;
+}
+
+.itemCard .image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.itemPage .title {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.itemPage .componentPrice {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.itemPage .description {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: justify;
+}
+
+.shopButton {
+  margin-top: 15px;
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  background-color: rgb(101, 101, 253);
+  color: white;
+  font-weight: bold;
+}
+
+.shopButton:hover {
+  cursor: pointer;
+  background-color: rgba(101, 101, 253, 0.668);
+}
+
+.itemCard:hover img {
+  background: black;
+  transform: scale(1.2);
+  transition: 3s;
+}
+
+.itemCard img {
+  transition: 3s;
+}

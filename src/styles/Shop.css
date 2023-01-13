@@ -1,0 +1,23 @@
+.shop {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop .header {
+  font-size: 2.5rem;
+  text-decoration: underline rgb(191, 0, 255);
+  text-underline-offset: 7px;
+  text-decoration-thickness: 3px;
+}
+
+.shop .offerings {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+}
