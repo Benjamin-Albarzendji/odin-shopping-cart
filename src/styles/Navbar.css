@@ -60,4 +60,5 @@ nav > div > * {
   color: white;
   border-radius: 50%;
   padding: 5px;
+  cursor: pointer;
 }
