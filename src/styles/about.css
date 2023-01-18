@@ -1,0 +1,22 @@
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .header {
+  font-size: 2.5rem;
+  text-decoration: underline rgb(191, 0, 255);
+  text-underline-offset: 7px;
+  text-decoration-thickness: 3px;
+}
+
+.about .aboutText {
+  margin-top: 5%;
+  width: 50%;
+  text-align: justify;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 45px;
+  border-radius: 15px;
+}

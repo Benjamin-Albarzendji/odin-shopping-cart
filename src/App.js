@@ -25,6 +25,19 @@ const App = () => {
     setCounter((old) => old + 1);
   };
 
+  const removePlanet = (planet, price, img) => {
+    if (shoppingList.some((c) => c.title === planet)) {
+      const tempShoppingList = [...shoppingList];
+
+      const objectFound = tempShoppingList.find((c) => c.title === planet);
+      const indexFound = tempShoppingList.indexOf(objectFound);
+      tempShoppingList.splice(indexFound, 1);
+
+      setShoppinglist(tempShoppingList);
+      setCounter((old) => old - 1);
+    }
+  };
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -39,7 +52,9 @@ const App = () => {
           />
           <Route
             path="/cart"
-            element={<Cart shoppingList={shoppingList} />}
+            element={
+              <Cart shoppingList={shoppingList} removePlanet={removePlanet} />
+            }
           ></Route>
         </Routes>
       </div>
