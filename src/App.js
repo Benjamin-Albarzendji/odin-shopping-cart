@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Shop from './components/Shop';
 import About from './components/About';
 import ItemPage from './components/ItemPage';
+import Cart from './components/Cart';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
@@ -11,12 +12,15 @@ const App = () => {
   const [shoppingList, setShoppinglist] = useState([]);
   const [counter, setCounter] = useState(0);
 
-  const addPlanet = (planet, price) => {
+  const addPlanet = (planet, price, img) => {
     if (shoppingList.some((c) => c.title === planet)) {
       return 0;
     }
 
-    const tempShoppingList = [...shoppingList, { title: planet, price: price }];
+    const tempShoppingList = [
+      ...shoppingList,
+      { title: planet, price: price, img: img },
+    ];
     setShoppinglist(tempShoppingList);
     setCounter((old) => old + 1);
   };
@@ -33,6 +37,10 @@ const App = () => {
             path="/shop/:id"
             element={<ItemPage addPlanet={addPlanet} />}
           />
+          <Route
+            path="/cart"
+            element={<Cart shoppingList={shoppingList} />}
+          ></Route>
         </Routes>
       </div>
     </BrowserRouter>

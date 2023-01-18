@@ -8,7 +8,13 @@ const ItemPage = (props) => {
   const propsData = location.state;
 
   const addHolder = () => {
-    if (props.addPlanet(location.state.title, location.state.price) === 0) {
+    if (
+      props.addPlanet(
+        location.state.title,
+        location.state.price,
+        location.state.img
+      ) === 0
+    ) {
       navigate('/shop');
     } else {
       navigate('/shop');

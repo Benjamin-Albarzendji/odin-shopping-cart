@@ -33,11 +33,11 @@ const Home = () => {
         <div className="featuredItems">
           <Link
             to="/shop/planet3"
-            state={{ img: planet3, title: 'New New York', price: '420$' }}
+            state={{ img: planet3, title: 'New New York', price: '420 $' }}
           >
             <ItemComponent
               img={planet3}
-              price="420$"
+              price="420 $"
               title="New New York"
             ></ItemComponent>
           </Link>
@@ -46,32 +46,32 @@ const Home = () => {
             state={{
               img: planet4,
               title: 'Alpha Omega Poseidon',
-              price: '1337$',
+              price: '1337 $',
             }}
           >
             <ItemComponent
               img={planet4}
-              price="1337$"
+              price="1337 $"
               title="Alpha Omega Poseidon"
             ></ItemComponent>
           </Link>
           <Link
             to="/shop/planet5"
-            state={{ img: planet5, title: 'Udarvis', price: '3141$' }}
+            state={{ img: planet5, title: 'Udarvis', price: '3141 $' }}
           >
             <ItemComponent
               img={planet5}
-              price="3141$"
+              price="3141 $"
               title="Udarvis"
             ></ItemComponent>
           </Link>
           <Link
             to="/shop/planet6"
-            state={{ img: planet6, title: 'Droutera 4IX', price: '9001$' }}
+            state={{ img: planet6, title: 'Droutera 4IX', price: '9001 $' }}
           >
             <ItemComponent
               img={planet6}
-              price="9001$"
+              price="9001 $"
               title="Droutera 4IX"
             ></ItemComponent>
           </Link>

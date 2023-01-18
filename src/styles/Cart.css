@@ -1,0 +1,78 @@
+.Cart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.Cart .cartTitle {
+  font-size: 2.5rem;
+  text-decoration: underline rgb(191, 0, 255);
+  text-underline-offset: 7px;
+  text-decoration-thickness: 3px;
+}
+
+.Cart .shoppingListContainer .shoppingImage {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.Cart .shoppingListContainer {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.Cart .shoppingListContainer .shoppingImage img {
+  width: 100%;
+}
+
+.shoppingItem {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 1s;
+}
+
+.shoppingItem .right,
+.shoppingItem .left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.shoppingItem button {
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  background-color: rgb(225, 37, 44);
+  color: white;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.shoppingItem button:hover {
+  cursor: pointer;
+  background-color: rgba(225, 37, 43, 0.656);
+}
+
+.shoppingItem:hover{
+    transform:scale(1.2);
+    transition: 1s;
+}

@@ -4,10 +4,6 @@ import '../styles/Navbar.css';
 import shoppingCart from '../images/shopping.png';
 
 const Navbar = (props) => {
-  const test = () => {
-    console.log(props);
-  };
-
   return (
     <div className="nav">
       <nav>
@@ -19,13 +15,15 @@ const Navbar = (props) => {
           <Link to="/shop">
             <div>Shop</div>
           </Link>
-          <Link to="/About">
+          <Link to="/about">
             <div>About</div>
           </Link>
           <div className="navImage">
-            <img onClick={test} src={shoppingCart} alt="" />
+            <img src={shoppingCart} alt="" />
             {props.counter > 0 && (
-              <div className="counterCart">{props.counter}</div>
+              <Link to="/cart">
+                <div className="counterCart">{props.counter}</div>
+              </Link>
             )}
           </div>
         </div>
