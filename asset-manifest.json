@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/odin-shopping-cart/static/css/main.66f7b7af.css",
-    "main.js": "/odin-shopping-cart/static/js/main.bd8e1268.js",
+    "main.js": "/odin-shopping-cart/static/js/main.c645d162.js",
     "static/js/787.5f0bc22c.chunk.js": "/odin-shopping-cart/static/js/787.5f0bc22c.chunk.js",
     "static/media/planet8.jpg": "/odin-shopping-cart/static/media/planet8.f4e1a712a2f9133330a4.jpg",
     "static/media/planet4.jpg": "/odin-shopping-cart/static/media/planet4.e3c7bb64761c94534501.jpg",
@@ -18,11 +18,11 @@
     "static/media/planet5.jpg": "/odin-shopping-cart/static/media/planet5.583728da5ccae4bdbde6.jpg",
     "index.html": "/odin-shopping-cart/index.html",
     "main.66f7b7af.css.map": "/odin-shopping-cart/static/css/main.66f7b7af.css.map",
-    "main.bd8e1268.js.map": "/odin-shopping-cart/static/js/main.bd8e1268.js.map",
+    "main.c645d162.js.map": "/odin-shopping-cart/static/js/main.c645d162.js.map",
     "787.5f0bc22c.chunk.js.map": "/odin-shopping-cart/static/js/787.5f0bc22c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.66f7b7af.css",
-    "static/js/main.bd8e1268.js"
+    "static/js/main.c645d162.js"
   ]
 }
