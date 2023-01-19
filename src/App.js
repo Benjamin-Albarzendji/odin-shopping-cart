@@ -39,7 +39,7 @@ const App = () => {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="https://benjamin-albarzendji.github.io/odin-shopping-cart/">
       <div className="App">
         <Navbar counter={counter}></Navbar>
         <Routes>
